@@ -10,8 +10,8 @@ export default function Home() {
         <div className="marquee">
 
         Hi, <br />
-        I am  <div className="box">Muhammad Saud</div> <br />
-        <h1 className="h1">Frontend Developer</h1>
+        I am  <div className="box">Saud Muhammad Ali AKA Xyron.</div> <br />
+        <h1 className="h1">Full Stack Developer</h1>
         </div>
       </div>
       </div>
