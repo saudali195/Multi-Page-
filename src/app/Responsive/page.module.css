@@ -1,0 +1,24 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+    padding: 10px;
+  
+}
+
+.testingResponsive{
+   
+    width: 500px;
+    height: 500px;
+    background-color: rgb(197, 37, 37);
+    border-radius: 10px;
+}
+
+
+@media only screen and (min-width: 300px) {
+    .testingResponsive{
+        width: 300px;
+        height: 300px;
+       border-radius: 10px;
+    }
+}
