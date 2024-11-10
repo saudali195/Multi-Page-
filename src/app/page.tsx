@@ -10,7 +10,7 @@ export default function Home() {
         <div className="marquee">
 
         Hi, <br />
-        I am  <div className="box">Muhammad Saad Raza</div> <br />
+        I am  <div className="box">Muhammad Saud</div> <br />
         <h1 className="h1">Frontend Developer</h1>
         </div>
       </div>
