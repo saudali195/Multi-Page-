@@ -1,0 +1,320 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header{
+background-color: Navy;
+color: white;
+height: 70px;
+}
+
+.header-button{
+   display: flex;
+   font-size: large;
+   padding: 20px;
+   justify-content: center;
+   align-items: center;
+   
+   gap: 15px
+   
+}
+
+.form{
+  background-color: aqua;
+  border: 5px solid ;
+
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+.footer{
+  background-color: navy;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+
+
+.box {
+  text-transform: uppercase;
+  color: #0000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline;
+  background: 
+    repeating-radial-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 0/2500px 2500px,
+    repeating-conic-gradient(#000 0 0.0001%,#fff 0 0.0002%) 50% 50%/2500px 2500px;
+  background-blend-mode: difference;
+  mix-blend-mode: lighten;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+
+
+
+:root {
+  --color-background: #000119;
+  --stroke-width: calc(1em / 16);
+  --font-size: 30vmin;
+  --font-weight: 700;
+  --letter-spacing: calc(1em / 8);
+}
+
+* {
+  box-sizing: border-box;
+}
+/* Styling for the main container */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive marquee text styling */
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Title styling with gradient text */
+.h1 {
+  font-size: 2rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #09f1b8, #00a2ff, #ff00d2, #fed90f);
+  color: transparent;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-stroke: 1px transparent;
+}
+
+/* Responsive styling for large screens */
+@media (min-width: 1024px) {
+  .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Responsive styling for tablet screens */
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 1.8rem;
+  }
+  .marquee {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive styling for mobile screens */
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 1.5rem;
+  }
+  .marquee {
+    font-size: 1rem;
+    animation: marquee 7s linear infinite; /* Adjust animation speed for small screens */
+  }
+}
+/* Main container styling */
+.parentContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+/* Child container for the About card */
+.childContainer1 {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 100px 20px 0; /* Reduces side margins for smaller screens */
+}
+
+/* Body background */
+body {
+  background-color: #000;
+}
+
+/* Title and text styling */
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.text {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.text1 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust card width and padding */
+  .childContainer1 {
+    width: 90%;
+    margin-top: 50px;
+  }
+
+  /* Adjust font sizes for readability on smaller screens */
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .text {
+    font-size: 1.3rem;
+  }
+
+  .text1 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Reduce side margins for very small screens */
+  .childContainer1 {
+    margin: 50px 10px 0;
+    padding: 15px;
+  }
+
+  /* Adjust font sizes further for readability on very small screens */
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 1.1rem;
+  }
+
+  .text1 {
+    font-size: 0.85rem;
+  }
+}
+
+
+.heading {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 50px;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.form {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 100%;
+  max-width: 350px;
+  padding: 0 20px;
+  background-color: white;
+}
+
+.input-field {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+  padding: 8px;
+  color: black;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.input-field:focus {
+  outline: none;
+  border-bottom: 1px solid yellow;
+}
+
+.textarea {
+  background-color: transparent;
+  color: white;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 4px;
+  height: 120px;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.button {
+  margin: 10px;
+  background-color: navy;
+  color: white;
+  width: 100%;
+  height: 48px;
+  margin-top: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.button:hover {
+  background-color: white;
+  color: #1e90ff
+}
+
+@media (min-width: 768px) {
+  .form {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 600px;
+  }
+
+  .textarea {
+    grid-column: span 2;
+  }
+
+  .button {
+    grid-column: span 2;
+    width: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .form {
+    max-width: 800px;
+  }
+}
+
+p{
+  margin-top: 50px;
+  text-align: center;
+}
